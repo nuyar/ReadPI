@@ -1,0 +1,81 @@
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="script.js"></script>
+	<style>
+		.divtext, aside, aside>div {
+			display: inline-block;
+			border: 3px solid orange;
+			overflow: auto;
+		}
+		
+		.divtext {
+			height: 100%;
+			width: 65%
+		}
+		
+		.wrapper {
+			width: 100%;
+			text-align: center;
+		}
+		
+		.textin {
+			width: 5em;
+		}
+		
+		p {
+			margin: 0;
+		}
+	</style>
+  </head>
+  <body onload="load();">
+	<div class="wrapper">
+	<div class="divtext">
+		<button onclick="play();">Play Sound</button>
+		<textarea id="input" style="height:90%;width:100%;"></textarea>
+	</div>
+	<aside style="height:100%;width:30%">
+		<div>
+			<input type="text" class="textin" value="0"/>
+			<input type="file" class="filein" id="file0" onchange="change(0);"/>
+		</div>
+		<div>
+			<input type="text" class="textin" value="1"/>
+			<input type="file" class="filein" id="file1" onchange="change(1);"/>
+		</div>
+		<div>
+			<input type="text" class="textin" value="2"/>
+			<input type="file" class="filein" id="file2" onchange="change(2);"/>
+		</div>
+		<div>
+			<input type="text" class="textin" value="3"/>
+			<input type="file" class="filein" id="file3" onchange="change(3);"/>
+		</div>
+		<div>
+			<input type="text" class="textin" value="4"/>
+			<input type="file" class="filein" id="file4" onchange="change(4);"/>
+		</div>
+		<div>
+			<input type="text" class="textin" value="5"/>
+			<input type="file" class="filein" id="file5" onchange="change(5);"/>
+		</div>
+		<div>
+			<input type="text" class="textin" value="6"/>
+			<input type="file" class="filein" id="file6" onchange="change(6);"/>
+		</div>
+		<div>
+			<input type="text" class="textin" value="7"/>
+			<input type="file" class="filein" id="file7" onchange="change(7);"/>
+		</div>
+		<div>
+			<input type="text" class="textin" value="8"/>
+			<input type="file" class="filein" id="file8" onchange="change(8);"/>
+		</div>
+		<div>
+			<input type="text" class="textin" value="9"/>
+			<input type="file" class="filein" id="file9" onchange="change(9);"/>
+		</div>
+	</aside>
+	</div>
+  </body>
+</html>
